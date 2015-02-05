@@ -1,17 +1,21 @@
 #include <stdio.h>
-int main(){
-  printf("Asdasdasds");
-  printf("Non devo essere qui");
-  printf("Ora ti elimino");
-  printf("Ho fatto una modifica!");
-  printf("ASDASDASDASDSDSD");
-  //asdasdsadas
+int dime(float *b)
+{
+  *b/=2;  
+  return *b;  
+    }
 
-  //yyyyyyyyyyyyyyyyyy
-  //ggggggggggggggggggggggggggg
-  //hhhhhhhhhhhhhhhh
+int main(){
+  float a;
   
-  ///aqaaasdafsdggsgsgsg
+  printf("Inserisci un numero (a): ");
+  scanf("%f",&a);
+  
+  dime(&a);
+  
+  printf("Il numero diemzzato e': %5.2f", a);
   system("pause");
   
 }
+
+//5.2 serve ad approssimare un numero e si mette sempre tra la % e l'identificatore.
